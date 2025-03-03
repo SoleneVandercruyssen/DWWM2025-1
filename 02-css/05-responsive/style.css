@@ -1,0 +1,75 @@
+*, ::before, ::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+    background-color: azure;
+    height: 400vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+article{
+
+    margin: 1rem 10px;
+    border: 1px solid greenyellow;
+    padding: 0.5rem;
+}
+
+button{
+    width: 200px;
+    padding: 1.5rem;
+    border: 2px solid black;
+}
+/* Les médias queries */
+
+@media screen and (min-width: 500px){
+    body{
+        background-color: crimson;
+    }
+    article{
+        display: inline-block;
+        width: 45%;
+    }
+
+}
+/* @media screen and (width > 1000px */
+/* Les médias queries permettent de placer des règles sous condition.
+Par exemple lesr ègles ci-dessous ne se d'éclencherons que si on est sur un écran que celui ci fait un mois 500px.
+ici on attend que l'écran face au moins 1000px.
+Cela n'efface pas les règles d'au dessus. */
+@media screen and (min-width: 1000px){
+    body{
+        background-color: crimson;
+    }
+    article{
+        width: 30%;
+    }
+
+}
+/* En dessous de 900 */
+@media screen and (max-width: 900px){}
+
+/* écran au format paysage{ */
+@media screen and (orientation: landscape){}
+
+/* écran au format portrait */
+@media screen and (orientation: portrait)
+
+/* En cas d'impression*/ {}
+
+    @media print {
+        h1{
+            display: none;
+        }
+    }
+
+    /* En cas de navigateur en thème sombre */
+    @media (prefers-color-scheme: dark){}  
+
+    /* En cas de navigateur en thème claire */
+    @media (prefers-color-scheme: light){}
