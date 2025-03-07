@@ -1,0 +1,121 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aliceblue;
+    margin-left: 50px;
+}
+
+li{
+    margin: 1rem 0;
+    list-style-type: none;
+}
+
+button{
+    text-align: center;
+    width: 100px;
+    font-size: 1rem;
+    padding: 1% ;
+}
+
+li:nth-child(1) button{
+    /* Les transitions sont toujours à placer en premier. */
+    border: 3px solid black;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+li:nth-child(1) button:hover{ 
+    /* En survolant le bouton, nous allons changer les couleurs de l'arrière plan, du texte et de la bordure.
+    De plus le bouton va tourner à 360deg. */
+    transform: rotateY(360deg);
+    background-color: rgb(248, 146, 146);
+    color: red;
+    border: 2px solid red;
+}
+
+li:nth-child(2) button{ 
+    border-radius: 100px;
+    transition-property: transform;
+    color: white;
+    background-color: orangered;
+    padding: 2px;
+}
+
+li:nth-child(2) button:hover{
+    border:2px solid white;
+}
+
+li:nth-child(2) button:hover span {
+    transform: rotate(360deg);
+}
+
+li:nth-child(2) span{
+    transform: rotate(0);
+}
+
+
+li:nth-child(3) button{
+    font-size: large;
+    /* "transition-property: transform" n'a pas fonctionné car il ne pouvais pas différencier le "transform: translateY" du "transform: rotate(360deg)" c'est pour cela qu'il est noté dans "transform-property" transform et rotate séparemment */
+    transition-property: transform, rotate;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(255, 40, 105);
+    border-radius: 10px;
+    padding: 10px 5px ;
+    width: 120px;
+    box-shadow: 5px 5px 5px 0 rgb(99, 99, 99);
+    border: 0.5px;
+    transition-duration: 1s;
+}
+
+li:nth-child(3) button:hover{
+/* Lorsque l'on passe la souris, le bouton se décale de 4px */
+    transform: translateY(4px);
+    border: white;
+}
+
+li:nth-child(3) button:active{
+    /* transform: rotate(360deg); */
+    rotate:  x 360deg;
+    transition-property: transform;
+}
+
+
+li:nth-child(4) button{
+    transition-property: transform;
+    transition-duration: 1s, 1s;
+    transition-delay: 3s;
+    color: purple;
+    font-size: large;
+    padding: 4px ;
+    width: 110px;
+    border-left: none;
+    border-right: none;
+    border-top: 0.5px;
+    border-bottom: 0.5px;
+    cursor: pointer;
+}
+
+li:nth-child(4) button:hover{
+color: black;
+border-top-style: solid;
+border-bottom-style: solid;
+transition-timing-function: steps(4);
+transform: scale(1, 1);
+}
+
+li:nth-child(4) button:active{
+    transform: rotateX(120deg);
+    border-top-color: deeppink;
+    border-bottom-color: deeppink;
+    color: deeppink;
+    stroke-dasharray: 150 180;
+    /* stroke-dashoffset: 180; */
+    transition: 1s ease-in-out; 
+}
