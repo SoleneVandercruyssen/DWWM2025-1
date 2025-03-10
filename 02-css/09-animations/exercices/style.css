@@ -1,0 +1,124 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Animation lignes */
+
+
+.lignes
+
+
+.ligne1{
+    width: 500px;
+    height: 10px;
+    background-color: rgb(248, 53, 53);
+}
+.ligne2{
+    width: 500px;
+    height: 10px;
+    background-color: red;
+}
+.ligne3{
+    width: 500px;
+    height: 10px;
+    background-color: rgb(243, 156, 156);
+}
+
+@keyframes circles {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(390deg);}
+}
+
+
+/* Animation cercles */
+
+
+/* Caractéristiques de la div */
+.animation{
+    position: absolute;
+    top: 20%;
+    /* left: 30%; */
+    display: inline-flex;
+    background-color: aliceblue;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 20%;
+}
+
+
+/* ensemble des caractéristiques des boules */
+
+.boutons{
+    position: relative;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: space-evenly;
+    align-items:center;  
+}
+
+/* Les caractéristiques des animations sont ici car ce sont seulement les points qui doivent bouger sans la div */
+
+
+#bouton1, #bouton2, #bouton3{
+    animation: pointsAnimation 3s linear infinite;
+}
+
+
+/* On ajoute un délai */
+
+
+#bouton1{
+    animation-delay: 0.1s;
+}
+#bouton2{
+    animation-delay: 0.2s;
+}
+#bouton3{
+    animation-delay: 0.3s;
+}
+
+@keyframes pointsAnimation 
+{
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-150%); } 
+    /* 100% { transform:translateY(-130%); } */
+    100% { transform:translateY(0); } 
+}
+
+
+/* Animation texte */
+
+.texte{
+    position: absolute;
+    width: 37%;
+    animation-duration: 5s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+p{
+    animation: loop 3s linear infinite;
+    font-size: large;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    /* permet de ne pas passer à la ligne lorsque l'animation est finie */
+    white-space: nowrap;
+}
+
+/* @keyframes loop {
+    0%{
+        transform: ;
+    }
+} */
