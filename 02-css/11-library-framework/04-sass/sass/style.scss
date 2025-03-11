@@ -1,0 +1,115 @@
+@use "list";
+
+
+h1{
+    color: red;
+}
+
+section.sass {
+    background-color: aquamarine;
+
+    h2{
+        background-color:brown;
+        padding: 5px;
+        // Ne rien peéciser avant le sélecteur, compte comme "enfant de"
+        // & span
+
+        span{
+            font-style: italic;
+        }
+        // Le symbole & représente le sélecteur parent, ici "h2"
+        &:hover{
+            transform: scale(1.2)
+        }
+    }
+}
+// variable sass 
+$colorMain: violet;
+.scss{
+    background-color: $colorMain
+}
+// extends 
+// Les extends permettent d'écrire un morceau de code et de les réutiliser ailleurs.
+// ils sont déclaré avec un "%" suivi d'un nom.
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    // On utilisera @extend pour appeler toute les propriétés d'un extend ou d'une classe.
+    @extend %flexCenter;
+    @extend .scss;
+}
+
+main ul {
+    @extend %flexCenter;
+}
+
+// Mixin
+// Les mixins vont ressembler aux extends, si ce n'est qu'elles sont plus paramétrable.
+//Elles se déclarent avec "@mixin unNom()
+
+// On peut ajouter des propriétés sous forme de variable à nos mixins, celles ci alors être,transmise lors de l'appelle.
+// en ajoutant "UneValeur" après une propriété =, celle qui prendra cette valeur par défaut 
+
+
+
+@mixin absol($top, $left, $trx: -50%, $try: 50%)
+{
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate($trx , $try);
+}
+
+.copy{
+    font-size: 3rem;
+    background-color: dodgerblue;
+    @include absol(50%, 50%);
+}
+
+.menu{
+    font-size: 3rem;
+    background-color: azure;
+    @include absol(20px, 80vw, $try: 100%)
+}
+
+
+// fonctions 
+// Une fonction permet de prendre une valeur en paramètre, et de la modifer avec de la renvoyer, ici par exemple,on rend nune couleur, on cherche la couleur complémentaire, on l'éclairci un ppeu, puis on la renvoi avec @return
+@function compLight($color)
+{
+    $color: lighten($color, 5);
+    $color: complement($color);
+    @return $color;
+}
+
+.copy{
+    color: compLight(mediumpurple)
+}
+// Conditions
+@mixin radius($w, $h)
+{
+    width: $w;
+    height: $h;
+    @if $w == $h{
+        border-radius: 50%;
+    }
+    @else {
+    border-radius: 5px;
+    }
+}
+
+.copy{
+    @include radius(5rem, 5rem);
+
+}
+
+.menu{
+    @include radius(10rem, 5rem);
+}
+.copy .menu{
+    @extend %flexCenter;
+}
