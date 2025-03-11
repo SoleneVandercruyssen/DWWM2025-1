@@ -1,26 +1,26 @@
-<<<<<<< HEAD
+
 *, ::before, ::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-ul{
-=======
-*, ::before, ::after
+ul
+
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 ul
 {
->>>>>>> cf1c1726db9345f8937700eacaaaf767d428472a
+
     position: absolute;
     top: 50%;
     left: -50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
+
     /* todo transition */
     /* Indiquer une durée de transition, va appliquer à tout les changement de propriété, de prendre ce temps pour changer de valeur.
     Exemple, ici le left passait de -50% à 50% instantanément, en indiquant 1s, il prendra donc 1s pour passer doucement de -50% à 50% */
@@ -105,7 +105,7 @@ li:nth-child(4):hover button{
     transform: scale(0.5);
     /* Si la transition est placé non pas sur l'élément de base, mais sur sa version modifié, alors la transition est bien appliqué mais lorsque l'on quitte lélément, il reprend sa forme d'origine sans transition. */
     /* transition: transform 1s linear; */
-=======
+
     /* 
         Indiquer une durée de transition, va appliquer à tout changement de propriété, de prendre ce temps pour changer de valeur.
         Exemple, ici le left passait de -50% à 50% instantanément, en indiquant 1s, il prendra donc 1s pour passer doucement de -50% à 50%
@@ -125,8 +125,8 @@ li:nth-child(4):hover button{
         On peut aussi avoir un rythme totalement personnalisé grace aux cubic-bezier
         https://cubic-bezier.com/
     */
-    transition-timing-function:cubic-bezier(1,.2,1,-0.44);
-}
+    transition-timing-function:cubic-bezier(1,2,1,-0.44);}
+
 li
 {
     margin: 1rem 0;
@@ -184,7 +184,7 @@ li:nth-child(3) button:active
     box-shadow: 10px 50px 20px 40px red;
 }
 li:nth-child(4) button{
-    /* transition: transform 1s linear; */
+    transition: transform 1s linear; 
 }
 li:nth-child(4):hover button{
     /* lors d'un déplacement, une modification de taille ou autre, avec un hover, attention car vous pouvez perdre le fait d'être au survol.
@@ -193,5 +193,5 @@ li:nth-child(4):hover button{
     /* si la transition est placé non pas sur l'élément de base, mais sur sa version modifié, alors la transition ne se fera que dans un sens.
     Par exemple ici, au hover la transition est bien appliqué, mais lorsque l'on quitte l'élément, il reprend sa forme d'origine sans transition */
     transition: transform 1s linear;
->>>>>>> cf1c1726db9345f8937700eacaaaf767d428472a
+
 }

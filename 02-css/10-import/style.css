@@ -1,0 +1,8 @@
+/* default doit être en 1er car il contient les variables */
+
+@import url("./css/default.css");
+@import url("./css/header.css");
+@import url("./css/main.css");
+@import url("./css/footer.css");
+/* importe le media querrie */
+@import url("./css/desktop.css") screen and (min-width: 900px);
