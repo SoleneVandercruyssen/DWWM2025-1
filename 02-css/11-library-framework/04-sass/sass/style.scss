@@ -1,4 +1,5 @@
 @use "list";
+<<<<<<< HEAD
 
 
 h1{
@@ -32,10 +33,49 @@ $colorMain: violet;
 // Les extends permettent d'écrire un morceau de code et de les réutiliser ailleurs.
 // ils sont déclaré avec un "%" suivi d'un nom.
 %flexCenter{
+=======
+h1{
+    color: red;
+}
+section.sass
+{
+    background-color: aquamarine;
+    h2
+    {
+        background-color: brown;
+        padding: 5px;
+        // Ne rien préciser avant le selecteur, compte comme "enfant de"
+        // & span
+        span
+        {
+            font-style: italic;
+        }
+        // Le symbole & représente le selecteur parent, ici "h2"
+        &:hover
+        {
+            transform: scale(1.2);
+        }
+    }
+}
+// variable sass
+$colorMain: violet;
+.scss
+{
+    background-color: $colorMain;
+}
+// extends
+/* 
+    Les extends permettent d'écrire un morceau de code et de les réutiliser ailleurs.
+    ils sont déclaré avec un "%" suivi d'un nom.
+*/
+%flexCenter
+{
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
     display: flex;
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
 
 header{
     // On utilisera @extend pour appeler toute les propriétés d'un extend ou d'une classe.
@@ -44,10 +84,23 @@ header{
 }
 
 main ul {
+=======
+header
+{
+    /* 
+        On utilisera @extend pour appeler toute les propriétés d'un extend ou d'une classe.
+    */
+    @extend %flexCenter;
+    @extend .scss;
+}
+main ul 
+{
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
     @extend %flexCenter;
 }
 
 // Mixin
+<<<<<<< HEAD
 // Les mixins vont ressembler aux extends, si ce n'est qu'elles sont plus paramétrable.
 //Elles se déclarent avec "@mixin unNom()
 
@@ -57,10 +110,21 @@ main ul {
 
 
 @mixin absol($top, $left, $trx: -50%, $try: 50%)
+=======
+/* 
+    Les mixins vont ressembler aux extends, si ce n'est qu'elles sont plus paramétrable.
+    Elles se déclarent avec "@mixin unNom()"
+
+    On peut ajouter des propriétés sous forme de variable à nos mixins, celles ci devront alors être transmise lors de l'appelle.
+    En ajoutant ":uneValeur" après une propriété, celle ci prendra cette valeur par défaut, si aucune ne lui ai transmise.
+*/
+@mixin absol($top, $left, $trx: -50%, $try: -50%)
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 {
     position: absolute;
     top: $top;
     left: $left;
+<<<<<<< HEAD
     transform: translate($trx , $try);
 }
 
@@ -90,10 +154,47 @@ main ul {
     color: compLight(mediumpurple)
 }
 // Conditions
+=======
+    transform: translate($trx, $try);
+}
+.copy
+{
+    font-size: 3rem;
+    background-color: paleturquoise;
+    @include absol(50%, 50%);
+}
+.menu
+{
+    font-size: 3rem;
+    background-color: mediumpurple;
+    @include absol(20px, 80vw, $try: 100%);
+}
+// fonctions
+/* 
+    Une fonction permet de prendre une valeur en paramètre, et de la modifier avant de la renvoyer,
+    ici par exemple on prend une couleur,
+    on cherche la couleur complémentaire,
+    on l'éclairci un peu, 
+    puis on la renvoi avec "@return"
+*/
+@function compLight($color)
+{
+    // $color: yellow;
+    $color: complement($color);
+    $color: lighten($color, 5%);
+    @return $color;
+}
+.copy
+{
+    color: compLight(mediumpurple);
+}
+// conditions
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 @mixin radius($w, $h)
 {
     width: $w;
     height: $h;
+<<<<<<< HEAD
     @if $w == $h{
         border-radius: 50%;
     }
@@ -111,5 +212,26 @@ main ul {
     @include radius(10rem, 5rem);
 }
 .copy .menu{
+=======
+    @if $w == $h
+    {
+        border-radius: 50%;
+    }
+    @else
+    {
+        border-radius: 5px;
+    }
+}
+.copy
+{
+    @include radius(5rem, 5rem);
+}
+.menu
+{
+    @include radius(10rem, 5rem);
+}
+.copy, .menu
+{
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
     @extend %flexCenter;
 }

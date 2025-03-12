@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 /* default doit être en 1er car il contient les variables */
 
+=======
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 @import url("./css/default.css");
 @import url("./css/header.css");
 @import url("./css/main.css");
 @import url("./css/footer.css");
+<<<<<<< HEAD
 /* importe le media querrie */
+=======
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 @import url("./css/desktop.css") screen and (min-width: 900px);

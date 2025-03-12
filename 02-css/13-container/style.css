@@ -1,3 +1,4 @@
+
 *, ::before, ::after{
     box-sizing: border-box;
     margin: 0;
@@ -27,10 +28,50 @@
 
 img{
     /* utiliser un container, débloque l'utilisation des unités "cqw" et "cqh" qui représentent un pourcentage de la largeur ou de la hauteur du container */
+
+*, ::before, ::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+    & article
+    {
+        border: 2px solid black;
+        border-radius: 5px;
+        /* 
+            En ajoutant la propriété "container-type"
+            l'élément devient un container, par ce fait, il devient incapable d'adapter sa taille à son contenu.
+            Il doit avoir une taille fixé ou au moins dépendante d'un contexte comme flex ou grid
+
+            normal (n'est pas un query container)
+            size (est un query container)
+            inline-size (est un query container uniquement sur l'axe inline (par défaut horizontal))
+        */
+        container-type: inline-size;
+        /* min-height: 60vh; */
+        /* 
+            Optionnellement, on pourra ajouter un nom à notre container, qui pourra être utile plus tard
+        */
+        container-name: monSuperArticle;
+    }
+}
+img
+{
+    /* 
+        utiliser un container, débloque l'utilisation des unités "cqw" et "cqh" qui représentent un pourcentage de la largeur ou de la hateur du container
+    */
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
     width: 80cqw;
     display: block;
     margin: auto;
 }
+
 /* Cette règle permet une media query dépendant non pas du viewport mais de la taille du container nommé. */
 @container myarticle (min-width: 450px){
 
@@ -39,3 +80,15 @@ img{
             width: 40cqw;
         }
     }
+
+/* 
+    Cette règle permet une media query dépendant non pas du viewport mais de la taille du container nommé.
+*/
+@container monSuperArticle (min-width: 450px)
+{
+    img,p
+    {
+        display: inline-block;
+        width: 40cqw;
+    }
+}}

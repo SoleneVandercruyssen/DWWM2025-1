@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ul {
   background-color: blue;
 }
@@ -18,6 +19,33 @@ ul .truc4 {
   font-size: 46px;
 }
 
+=======
+@charset "UTF-8";
+/* 
+    ajouter "..." derière un paramètre, permet de faire contenir un nombre infini de paramètre, dans une variable.
+*/
+ul {
+  background-color: cornflowerblue;
+  /* 
+      @for permet de créer une boucle
+      allant du chiffre indiqué après "from"
+      à celui indiqué après "to"
+      cette boucle va répéter l'action entre accolade en remplaçant la valeur de "$i" à chaque fois
+  */
+}
+ul .truc1 {
+  font-size: 16px;
+}
+ul .truc2 {
+  font-size: 26px;
+}
+ul .truc3 {
+  font-size: 36px;
+}
+ul .truc4 {
+  font-size: 46px;
+}
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 ul .truc5 {
   font-size: 56px;
 }
@@ -29,16 +57,25 @@ h1 {
 section.sass {
   background-color: aquamarine;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 section.sass h2 {
   background-color: brown;
   padding: 5px;
 }
+<<<<<<< HEAD
 
 section.sass h2 span {
   font-style: italic;
 }
 
+=======
+section.sass h2 span {
+  font-style: italic;
+}
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 section.sass h2:hover {
   transform: scale(1.2);
 }
@@ -47,12 +84,21 @@ section.sass h2:hover {
   background-color: violet;
 }
 
+<<<<<<< HEAD
 .copy .menu, main ul, header {
+=======
+/* 
+    Les extends permettent d'écrire un morceau de code et de les réutiliser ailleurs.
+    ils sont déclaré avec un "%" suivi d'un nom.
+*/
+.copy, .menu, main ul, header {
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+<<<<<<< HEAD
 .copy {
   font-size: 3rem;
   background-color: dodgerblue;
@@ -60,19 +106,57 @@ section.sass h2:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
+=======
+header {
+  /* 
+      On utilisera @extend pour appeler toute les propriétés d'un extend ou d'une classe.
+  */
+}
+
+/* 
+    Les mixins vont ressembler aux extends, si ce n'est qu'elles sont plus paramétrable.
+    Elles se déclarent avec "@mixin unNom()"
+
+    On peut ajouter des propriétés sous forme de variable à nos mixins, celles ci devront alors être transmise lors de l'appelle.
+    En ajoutant ":uneValeur" après une propriété, celle ci prendra cette valeur par défaut, si aucune ne lui ai transmise.
+*/
+.copy {
+  font-size: 3rem;
+  background-color: paleturquoise;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 }
 
 .menu {
   font-size: 3rem;
+<<<<<<< HEAD
   background-color: azure;
+=======
+  background-color: mediumpurple;
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
   position: absolute;
   top: 20px;
   left: 80vw;
   transform: translate(-50%, 100%);
 }
 
+<<<<<<< HEAD
 .copy {
   color: #c2e084;
+=======
+/* 
+    Une fonction permet de prendre une valeur en paramètre, et de la modifier avant de la renvoyer,
+    ici par exemple on prend une couleur,
+    on cherche la couleur complémentaire,
+    on l'éclairci un peu, 
+    puis on la renvoi avec "@return"
+*/
+.copy {
+  color: rgb(194.1145251397, 224.1284916201, 132.3715083799);
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 }
 
 .copy {
@@ -85,6 +169,10 @@ section.sass h2:hover {
   width: 10rem;
   height: 5rem;
   border-radius: 5px;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
 
 /*# sourceMappingURL=style.css.map */
