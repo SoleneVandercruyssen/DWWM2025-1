@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
+
 
 body{
     display: grid;
@@ -64,7 +64,7 @@ main{
                 grid-column: 1/-1;
             }
             & article{
-=======
+
 body
 {
     display: grid;
@@ -136,13 +136,13 @@ main
             }
             & article
             {
->>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
+
                 border: 2px solid black;
                 border-radius: 5px;
                 padding: 5px;
                 background-color: antiquewhite;
                 box-shadow: 5px 5px 3px rgba(139, 131, 120, 0.5);
-<<<<<<< HEAD
+
                 & h3 {
                     text-align: center;
                     font-size: 1.5em;
@@ -163,7 +163,7 @@ main
                 }
             }
 
-         }
+        }
     }
 }
 body > footer{
@@ -171,7 +171,7 @@ body > footer{
     padding: 20px;
     font-size: 1.5em;
     & ul {
-=======
+
                 & h3
                 {
                     text-align: center;
@@ -205,7 +205,7 @@ body > footer
     font-size: 1.5em;
     & ul
     {
->>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
+
         display: flex;
         list-style: none;
         justify-content: space-around;
@@ -214,7 +214,6 @@ body > footer
 .strong
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-<<<<<<< HEAD
     /* Je peux aussi utiliser "&" comme enfant et non comme parent:  */
     :is(header) & {
         text-decoration: underline;
@@ -222,18 +221,4 @@ body > footer
     :is(main) & {
         font-weight: bold;
     }
-}
-=======
-    /* 
-        Je peux aussi utiliser "&" comme enfant et non comme parent:
-    */
-    :is(header) &
-    {
-        text-decoration: underline;
-    }
-    :is(main) &
-    {
-        font-weight: bold;
-    }
-}
->>>>>>> e56bfd89e6fe449f95b45edf5e1325e3bfeb94ed
+}}}
