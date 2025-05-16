@@ -1,0 +1,432 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1920px) {
+
+#nav-mobile {
+    display: none;
+}
+
+
+
+.span{
+    color: rgb(247, 165, 247);
+}
+
+span{
+    color: lightskyblue;
+}
+
+/* Grands titres */
+@font-face {
+    font-family: Noto_Serif;
+    src: url(/Noto_Serif/static/NotoSerif-Italic.ttf);
+}
+
+/* Textes */
+@font-face {
+    font-family: Oranienbaum;
+    src: url(/Portfolio/Fonts/Oranienbaum/Oranienbaum-Regular.ttf);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    grid-template-rows: auto 1fr auto;
+    display: grid;
+    grid-template-areas: 
+    "header header   "
+    "main main  "
+    "footer footer ";
+
+    /* p{
+        font-family: Oranienbaum;
+    } */
+}
+
+header{
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(to right, rgb(137, 198, 255),aliceblue  );
+    width: 100%;
+    padding: 10px;
+    grid-area: header;
+
+}
+header li {
+    transition: 1s linear;
+    transition-property: border;
+    position: relative; 
+    text-align: center;
+}
+
+
+header li::before,
+header li::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    border-top: 3px solid #000000;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+
+header li::before{
+    /* commence l'animation en haut, dans un sens */
+    top: -3px;
+    left: 0;
+}
+header li::after{
+    /* commence l'animation en bas, dans l'autre sens */
+    bottom: -3px;
+    right: 0;
+}
+header li:hover{
+    color: #000;
+}
+/* Width est l'élément qui permet aux lignes de s'afficher */
+header li:hover::before,
+header li:hover::after{
+    width: 100%;
+}
+
+
+li {
+    list-style-type: none;
+    float: inline-start;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    }
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.paragraphe{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+h1{
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 6%;
+    justify-content: center;
+    align-items: center;
+    font-family: Noto_Serif;
+}
+
+p{
+    width: 20%;
+    color: white;
+    font-size: 1.3rem;
+    text-align: left;
+    font-family: Oranienbaum;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.skills{
+    width: 25%;
+    display: flex;
+    position: absolute; 
+    top: 40%;
+    left: 60%;
+    margin-right: 0;
+
+    img{
+    width: 60px;
+}
+        img{
+            position: relative;
+            animation: rotation 2s linear infinite;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+
+            img:active{
+                rotate: (180deg); 
+            }
+}
+}
+
+@keyframes rotation {
+    0% {
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}  
+
+
+#html, #css, #java, #swift, #figma, #canva, #illustrator {
+
+    transition: transform 1s linear;
+}
+#html:hover{
+    filter: contrast(800%);
+    scale: 2;
+} 
+#css:hover{
+    filter: contrast(800%);
+    scale: 2;
+} 
+#java:hover{
+    filter: contrast(800%);
+    scale: 2;
+} 
+#swift:hover{
+    filter: contrast(800%);
+    scale: 2;
+} 
+#figma:hover{
+    filter: contrast(800%);
+    scale: 2;
+} 
+#canva:hover{
+    filter: contrast(800%);
+    scale: 2;
+} 
+#illustrator:hover{
+    filter: contrast(800%);
+    scale: 2;
+} 
+
+footer{
+    position: sticky; 
+    top: 100vh;
+    height: 10vh; 
+    width: 100%;
+    background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
+    grid-area: footer;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    align-items:left ; 
+    height: 10px;
+}
+
+
+#à_côté{
+    width: 100%;
+}
+
+
+.copyright{
+    font-size: 1.3rem;
+    width: 20%;
+    height: 20px;
+    color: #000000;
+    margin-top: 1%;
+}
+}
+
+
+
+
+
+/* ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    display: inline-block;
+} */
+
+
+
+/* ! Mobile */
+
+
+
+@media screen and (min-width: 340px) and (max-width:490px ) {
+body{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #nav-desktop{
+        display: none;
+    }
+
+    .hamburger-menu{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hamburger-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hamburger-icon span { 
+        width: 100%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.3 ease-in-out ;
+    }
+    
+    .menu-links{ 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-image: linear-gradient(to right, rgb(137, 198, 255),aliceblue);
+        width: fit-content;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3 ease-in-out ;
+    }
+    
+    .menu-links a { 
+    
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        transition: all 0.3 ease-in-out ;
+    }
+    
+    .menu-links li {   
+        
+        list-style-type: none; 
+    }
+    
+    .menu-links.open{
+    max-height: 200px;
+    }
+    
+    .hamburger-icon.open span:first-child{
+    transform: rotate(45deg)  translate(10px, 5px);
+    }
+    .hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+    }
+    .hamburger-icon.open span:nth-child(3){
+    transform: rotate(-45deg)  translate(10px, -5px);
+    }
+    
+    .hamburger-icon span:first-child{
+        transform: none;
+    }
+    .hamburger-icon span:nth-child(2){
+        opacity: 1;
+    }
+    .hamburger-icon span:nth-child(3){
+        transform: none;
+    }
+
+
+        /* TEXTE */
+
+    .span{
+        color: rgb(247, 165, 247);
+    }
+    
+    span{
+        color: lightskyblue;
+    }
+    
+    p{
+        
+        width: 90%;
+        color: white;
+        margin-left: 7%;
+        font-size: 1rem;
+        text-align: left;
+        font-family: Oranienbaum;
+        margin-bottom: 10%;
+    }
+    
+    main{
+        /* margin: 0; */
+        width: 100%;
+        height: 100vh;
+        display: flex; 
+        flex-direction: column;
+    }
+
+/* div du footer */
+    #à_côté{
+        width: 100%; }
+
+
+.skills{
+    margin-left: 10%;
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    position: sticky; 
+    top: 100vh; 
+    background-image:linear-gradient(to right,  aliceblue, rgb(137, 198, 255));
+    width: 100%;
+    height: 8vh;
+}
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    align-items:left ; 
+    height: 10px;
+}
+
+footer li{
+    list-style-type: none;
+    float: inline-start;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; 
+    }
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+img{
+width: 40px;
+}
+
+h1{
+            margin-top: 30%;
+            font-family: Noto_Serif;
+            margin-left:10%;
+            font-size: 1.3em;
+            color: white;
+            margin-bottom: 10%;
+        }
+    }

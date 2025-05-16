@@ -1,0 +1,25 @@
+{
+    "descriptions" :
+    [
+    {
+    "h1": "Mon site génial",
+    "p": "Ce site vous propose du contenu des plus passionnant"
+        },
+
+    { 
+    "h1": "My awesome page ",
+    "p": "We give you so much informations"
+        },
+
+    { 
+    "h1": "私のサイト",
+    "p": "このサイトは最もエキサイティングなコンテンツを提供します"
+        },
+
+    { 
+    "h1": "मेरी साइट",
+    "p": "आओ और इसे खोजो "
+        }
+    ]
+}
+

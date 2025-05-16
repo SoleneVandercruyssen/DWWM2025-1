@@ -1,0 +1,14 @@
+{
+"title": "Ma requête à un fichier JSON",
+"articles":
+[
+    {
+        "heading": "Mon super article",
+        "content": "Je pourrai mettre du lorem"
+    },
+    {
+        "heading": "Mon super article 2",
+        "content": "Je pourrai mettre plus du lorem"
+    }
+]
+}

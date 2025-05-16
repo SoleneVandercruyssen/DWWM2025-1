@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les balises de base des formulaires</title>
+</head>
+<body>
+<!-- get enverra directement les données du formulaire dans l'url -->
+<!-- post informations enregistrées de façon cachée, non dans l'url exemple un mot de passe -->
+
+    <form action="https://www.google.fr/search" method="get" >
+        <!-- label permet d'indiquer le nom;rôle d'un champ -->
+        <label for="nom"> Nom :</label>
+        <!-- le name indique le nom du champ -->
+        <input type="text" name="nom" id="Nom" autofocus>
+        <!-- le type submit crée un bouton de soumission/d'envoi de formulaire  -->
+        <input type="submit" value="Envoyer" >
+    </form>
+<hr>
+<form action="./02-formulaire.html" method="post">
+    <!-- readonly permet que le champ ne soit pas modifiable, value pour mettre une valeur par défaut -->
+    <input type="text" name="prenom" id="prenom" value="Lola" readonly>
+    <br>
+    <!-- placeholder permet d'afficher un texte qui s'effacera automatiquement quand l'utilisateur entre une information, disabled, permet de désactiver le champ-->
+    <input type="text" name="nom" id="nom" placeholder="Votre nom" disabled >
+    <br>
+    <!-- permet un champ de date avec calendrier -->
+    <input type="date" name="birthday" id="birthday">
+    <!-- permet une selection de couleur -->
+    <input type="color" name="color" id="color">
+    <br>
+    <!-- vérifie que le contenu soit bien conforme à la syntaxe d'un email -->
+    <input type="email" name="mail" id="mail">
+    <br>
+    <!-- affiche les caractères sous forme de point -->
+    <input type="password" name="password" id="password">
+    <br>
+    <!-- permet d'envoyer des fichiers, que fonctionnel quand ke formulaire est en post, multiple permet de sélectionner plusieurs fichiers d'un coup -->
+    <input type="file" name="fichier" id="fichier"multiple >
+    <br>
+    <input type="hidden" name="csrf" value="valeur cachée">
+    <br>
+    <!-- permet un champ de texte plus grand qu'un simpleinput et gérant les lignes multiples -->
+    <textarea name="commentaires" id="comm"></textarea>
+    <!-- fieldset crée un cadre, si accompagné d'une légende, celle-ci s'affiche en haut du cadre  -->
+    <fieldset>
+        <legend>Quel catégorie appréciez-vous ?</legend>
+        <!-- checkbox crée des cases à cocher -->
+        <input type="checkbox" name="aventure" id="av" checked>
+        <label for="av">Aventure</label>
+        <br>
+        <input type="checkbox" name="thriller" id="th">
+        <label for="th">Thriller</label>
+        <br>
+        <input type="checkbox" name="horreur" id="ho">
+        <label for="ho">Horreur</label>
+        <br>
+    </fieldset>
+
+<fieldset>
+    <legend> Choisi ton langage préféré !</legend>
+    <!-- les radios portant le même nom, se décoche lorsque l'un d'entre eux est coché -->
+    <input type="radio" name="langage" id="HTML">
+    <label for="HTML">HTMl</label>
+    <br>
+    <input type="radio" name="langage" id="CSS">
+    <label for="CSS">CSS</label>
+    <br>
+    <input type="radio" name="langage" id="Javascript">
+    <label for="Javascript">Javascript</label>
+    <!-- penser à rajouter une value aux radios, sinon la seule info qui sera envoyé c'est "langage=on" -->
+</fieldset>
+<!-- Crée une liste à choix -->
+<select name="repas" id="repas" multiple >
+<!-- C'est la value qui est envoyée avec le formulaire et non le texte dans l'option -->
+<option value="frite">Frite</option>
+<option value="pizza">Pizza</option>
+<option value="pasta" selected>Pâtes</option>
+</select>
+<!-- l'attibut required rend un champ obligatoire à remplir pour pouvoir envoyer le formulaire -->
+<input type="text" name="test" id="test" required>
+    <button type="submit">Envoyer</button>
+    <!-- Crée un bouton sans effet -->
+    <input type="button" value="Annuler">
+    <input type="reset" value="Réinitialiser">
+</form>
+
+
+</body>
+</html>

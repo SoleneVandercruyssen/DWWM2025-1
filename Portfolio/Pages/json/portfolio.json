@@ -1,0 +1,30 @@
+{
+    "descriptions" :
+    [
+{
+    "h1": "Bootcamp numérique d'une semaine",
+    "p": "Le but de ce bootcamp été de découvrir différents métiers du numérique comme l'IT, le Développeur mais aussi découvrir l'IA. Le projet fil rouge consisté à créer un site web pour les Jeux Olympiques de Chamonix en respectant la charte graphique. Chaque personne avait son rôle (développeur etc...) Pour ma part j'avais le rôle de Chargée de Communication. J'ai alors utilisée Planable pour créer des posts pour les réseaux sociaux notamment Instagram."
+},
+
+{
+    "h1": "Digistart",
+    "p": "Digistart est un programme sur les bases de l'html, css et javascript en 20h, réparties en 4h par semaine, en 2h tous les mardi et jeudi."
+},
+
+{
+    "h1": "Apple Foundation Program",
+    "p": "Cette formation de 1 mois sur le langage Swift avait pour fil rouge de créer une application sur un thème choisi. Mon groupe a choisi La Biodiversité. Le programme est séparé en 4 étapes. La 1ère semaine consiste à comprendre l'UX design en faisant des recherches sur le thème du projet, la concurrence, les points forts et faibles des applications déjà réalisées. La 2ème semaine se focalise sur la maquettage de l'application sur Figma. La 3ème semaine est une semaine de cours sur le swift et la dernière semaine est le prototypage de l'application."
+},
+
+{
+    "h1": "Formation MS",
+    "p": "Cette formation a durée 2 mois, où l'on apprend l'HTML et le CSS par des cours ainsi que des briefs.(cours + poussés que Digistart)"
+},
+
+{
+    "h1": "DWWM",
+    "p": "En cours..."
+}
+
+]
+}

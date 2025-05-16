@@ -1,0 +1,4 @@
+Sitemap: https://http://127.0.0.1:5500/Portfolio/Pages/html/index.html/sitemap.xml
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /profile/

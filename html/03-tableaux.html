@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>table, td , tr, th
+    {
+        border: 2px solid rgb(255, 0, 0);
+        border-collapse: collapse;
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- un tableau -->
+    <table>
+        <!-- tr est pour un erangée d'un tableau -->
+        <tr>
+            <!-- td est une case d'un tableau -->
+            <td>Prénom</td>
+            <td>Nom</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <!-- Chaque rangée d'un tableau, doit avoir le même nombre de case -->
+            <td>John</td>
+            <td>Doe</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!-- tableau 2 -->
+     <table>
+        <!-- thead représente l'en-tête du tableau -->
+        <thead>
+            <tbody>
+            <tr>
+                <!-- titre des colonnes -->
+                <th colspan="2">Prénom</th>
+                <th colspan="2">Nom</th>
+                <!-- colspan permet de fusionner des colonnes -->
+            </tr>
+        </thead>
+        <!-- tbody représente le corps du tableau -->
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td colspan="2">Doe</td>
+               
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td colspan="2" >tomate</td>
+            </tr>
+           </tbody>
+           <!-- pied du tableau -->
+            <tfoot>
+                <tr>
+                    <td colspan="4" >Fruit </td>
+                </tr>
+            </tfoot>
+     </table>
+</body>
+</html>

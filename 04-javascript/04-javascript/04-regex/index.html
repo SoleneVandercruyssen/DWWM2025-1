@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les regex</title>
+    <script src="./scripts.js" defer></script>
+    <script src="/04-javascript/04-regex/exercice/script.js" defer ></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <form action="" method="post"> 
+            <fieldset>
+            <legend>Identifiant  </legend>
+
+                <br>
+                    <label for="name">Nom d'utilisateur</label> 
+                <br>
+                    <input type="text" id="name" name="name">
+                <br>
+                    <label for="password">Mot de passe</label>
+                <br>
+                    <input type="password" name="password" id="password">
+                    
+                    <div id="color"></div>
+                <br>
+                    <label for="password2">Confirmation du mot de passe</label>
+                <br>
+                    <input type="password" name="password2" id="password2">
+                <br>
+                </fieldset>
+
+            <fieldset>
+                <legend>Coordonnées </legend>
+            <br>
+                <label for="tel">Tel</label> 
+            <br>
+                <input type="tel" name="tel" id="tel" pattern="/[*a-zA-Z]/">
+            <br>
+                <label for="mail">Mail</label>
+            <br>
+                <input type="email" id="mail" name="mail" pattern="/@/"> 
+            <br>
+                <input type="button" value="submit">
+            </fieldset>
+        
+
+            
+            
+        </form>
+    </main>
+</body>
+</html>

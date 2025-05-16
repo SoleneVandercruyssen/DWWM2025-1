@@ -1,0 +1,77 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* ! EXO 1 */
+
+#hero{
+    
+    width: 150px;
+    height: 70px;
+    background-color: rgb(235, 132, 153);
+}
+
+.cartes{
+    width: 320px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+/* ! EXO 2 */
+
+
+
+#languages{
+    background-color: linen;
+    width: 250px;
+    height: 40px;
+}
+
+/* ! EXO 3 */
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero-card{
+        border: black solid;
+        display: inline-block;
+        padding: 2rem;
+        ul{
+            display: none;
+        }
+    }
+}
+
+li{
+    list-style: square;
+}
+
+/* <!-- ====================== Exercice 3 ====================== --> */
+
+img{
+    width: 500px;
+    aspect-ratio: 1/1;
+    margin: 5rem;
+    object-fit: cover;
+}

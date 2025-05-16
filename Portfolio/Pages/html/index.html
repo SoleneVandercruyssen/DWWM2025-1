@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="author"  name="Solène Vandercruyssen">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="portfolio, numérique, développement web">
+    <meta name="og:site_name" content="Portfolio Solène Vandercruyssen">
+    <meta name="og:title" content="Mon Portfolio">
+    <meta  name="type" content="site web">
+    <!-- l'url sera a changer lorsque le site sera mis en ligne : https.... -->
+    <meta name="og-url" content="http://127.0.0.1:5500/Portfolio/Pages/html/index.html" >
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Portfolio/Pages/css/style.css">
+    <script src="/Portfolio/Pages/javascript/script.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <!-- Version desktop -->
+        <nav id="nav-desktop">
+            <ul>
+                <li><a href="/Portfolio/Pages/html/index.html">Home</a></li>
+                <li><a href="/Portfolio/Pages/html/portfolio.html">Portfolio</a></li>
+                <li><a href="/Portfolio/Pages/html/about.html">About</a></li>
+                <li><a href="/Portfolio/Pages/html/contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+
+
+
+        <!-- Version mobile -->
+        <nav id="nav-mobile"> 
+<div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <!-- Une div pour les liens de navigation -->
+        <div class="menu-links">
+            <ul>
+                <li><a href="/Portfolio/Pages/html/index.html" onclick="toggleMenu()" >Home</a></li>
+                <li><a href="/Portfolio/Pages/html/portfolio.html" onclick="toggleMenu()" >Portfolio</a></li>
+                <li><a href="/Portfolio/Pages/html/about.html" onclick="toggleMenu()" >About</a></li>
+                <li><a href="/Portfolio/Pages/html/contact.html" onclick="toggleMenu()" >Contact</a></li> 
+            </ul>
+        </div>
+</div>
+        </nav>
+    </header>
+
+
+
+<!-- bouton CV ? au lieu de portfolio -->
+
+    <main>
+    <div class="flex" >
+        <menu>
+    <button class="btn"> <li><a href="/Portfolio/Pages/html/portfolio.html"> Mon portfolio</a></li> </button>
+</menu>
+</div>
+<h1>Hi !</h1>  
+<br>
+
+<div class="flex2" >
+    <div class="left">
+        <p>  My name is <span>Solène Vandercruyssen</span>, i'm 21 years old and i'm actually learning how to be a Web Developper.
+            This is a new passion for me and i'm really excited to know more about it and to see how far i can go.</p>
+    </div>
+
+    <div class="right" >
+        <li> <button class="photo" ><a href="/Portfolio/Pages/portfolio.html"></a></button></li>
+    </div>
+</div>
+
+</main>
+    <footer>  
+        <div id="à_côté"> 
+        <ul>
+            <li class="copyright" >©Copyright 2025 All rights reserved</li> 
+            <li class="logos" ><a href="#" target="_blank" ><img src="/Portfolio/Images/icons8-instagram-64.png" alt="logo instagram"></a></li>
+            <li class="logos" ><a href="#" target="_blank" ><img src="/Portfolio/Images/icons8-facebook-nouveau-64.png" alt="logo facebook"></a></li>
+            <li class="logos" ><a href="#" target="_blank" ><img src="/Portfolio/Images/icons8-linkedin-64.png" alt="logo linkedin"></a></li>
+            <li class="logos" ><a href="https://github.com/SoleneVandercruyssen?" target="_blank" ><img src="/Portfolio/Images/icons8-github-64.png" alt="logo github" id="github" ></a></li>
+            
+        </ul>
+
+</div>
+    </footer>
+
+</body>
+</html>

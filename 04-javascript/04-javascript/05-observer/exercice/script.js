@@ -1,0 +1,44 @@
+/*
+    ---------------- EXO 1 --------------------
+    1. Rendre tous les paragraphes du main, invisible (js ou css).
+    
+    2. Ajouter Une observation sur chaque paragraphes.
+    3. Lorsque l'élément est au moins à moitié dans le viewport, le rendre visible.
+    4. Désactiver la détection de l'élément une fois l'action terminé.
+    (Bonus). Faire venir le paragraphe depuis le côté.
+    ---------------- EXO 2 ----------------------
+    1. Lorsque le dernier paragraphe est à 200px en dessous du viewport.
+        Créer 10 paragraphes et les ajouter à la suite du main (de simple paragraphes avec du lorem).
+    2. Désactiver la détection du dernier paragraphe.
+    3. Ajouter l'animation de l'exercice 1 aux nouveaux paragraphes.
+    4. Ajouter la détection du dernier paragraphe au nouveau dernier paragraphe qui vient d'être ajouté.
+ */
+
+    // ! EXO 1 - 1
+    const mainp = document.querySelector("main p");
+    mainp.addEventListener("scroll", invisible);
+
+    function invisible() {
+        mainp.style.visibility = "hidden";
+    }
+
+    // function hidden (){
+    // }
+    console.log(mainp);
+        
+
+    // options = {
+    //     rootMargin :"-150px"
+    // };
+const observer2 = new IntersectionObserver(exo1, options);
+function exo1(tableau) {
+
+    // console.log(tableau);
+    const entrées = tableau[0];
+    for (let i = 0; i < entrées.length; i++) 
+    {
+    mainp.style.visibility = "hidden";
+    }
+}
+    // On observe les paragraphes
+    observer2.observe(mainp)

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  content="author" name="Solène Vandercruyssen" >
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="portfolio, numérique, développement web">
+    <meta name="og:site_name" content="Portfolio Solène Vandercruyssen">
+    <meta name="og:title" content="Mon Portfolio">
+    <meta  name="type" content="site web">
+    <meta name="og-url" content="http://127.0.0.1:5500/Portfolio/Pages/html/index.html" >
+    <link rel="stylesheet" href="/Portfolio/Pages/css/contact.css">
+    <script src="/Portfolio/Pages/javascript/script.js" defer></script>
+    <script src="/Portfolio/Pages/javascript/script.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Version desktop -->
+        <nav id="nav-desktop">
+            <ul>
+                <li><a href="/Portfolio/Pages/html/index.html">Home</a></li>
+                <li><a href="/Portfolio/Pages/html/portfolio.html">Portfolio</a></li>
+                <li><a href="/Portfolio/Pages/html/about.html">About</a></li>
+                <li><a href="/Portfolio/Pages/html/contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+        <!-- Version mobile -->
+        <nav id="nav-mobile"> 
+<div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="/Portfolio/Pages/html/index.html" onclick="toggleMenu()" >Home</a></li>
+                <li><a href="/Portfolio/Pages/html/portfolio.html" onclick="toggleMenu()" >Portfolio</a></li>
+                <li><a href="/Portfolio/Pages/html/about.html" onclick="toggleMenu()" >About</a></li>
+                <li><a href="/Portfolio/Pages/html/contact.html" onclick="toggleMenu()" >Contact</a></li> 
+            </ul>
+        </div>
+</div>
+        </nav>
+    </header>
+
+    <!-- Mes contacts -->
+<main class="flex" >   
+    <div class="myContact" >
+<h1> Contact me !</h1> <br>
+<div><p><img  class="rotate"  src="/Portfolio/Images/icons8-phone-64.png" alt=""  class="ringAnimation" >06 44 76 78 82</p>
+    </div>
+<br>
+<p><img  class="rotate" src="/Portfolio/Images/icons8-mail-64.png" alt="" class="ringAnimation" > solenevandercruyssen2@gmail.com</p>
+</div>
+    
+
+<!-- Formulaire -->
+<div class="yourContact"  id="borderAnimation"  class="radley-regular"  >
+    <form action="" method="get">
+        
+
+        <legend>  Your contact ! </legend> 
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" required>
+
+
+        <br>
+        <label for="email">Email:</label>
+
+        <input type="email" name="email" id="email" required><br>
+        <label for="message">Message:</label> <br>
+
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea> <br>
+
+        <input id="send"type="submit" value="Submit">
+        
+
+    </form>
+</div>
+
+</main>
+<!-- Footer -->
+<footer>  
+    <div id="à_côté"> 
+    <ul>
+        <li class="copyright" >©Copyright 2025 All rights reserved</li> 
+        <li class="logos" ><a href="#" target="_blank" ><img src="/Portfolio/Images/icons8-instagram-64.png" alt="logo instagram"></a></li>
+        <li class="logos" ><a href="#" target="_blank" ><img src="/Portfolio/Images/icons8-facebook-nouveau-64.png" alt="logo facebook"></a></li>
+        <li class="logos" ><a href="#" target="_blank" ><img src="/Portfolio/Images/icons8-linkedin-64.png" alt="logo linkedin"></a></li>
+        <li class="logos" ><a href="https://github.com/SoleneVandercruyssen?" target="_blank" ><img src="/Portfolio/Images/icons8-github-64.png" alt="logo github" id="github" ></a></li>
+        
+    </ul>
+
+</div>
+</footer>
+
+</body>
+</html>
