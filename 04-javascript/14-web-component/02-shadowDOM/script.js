@@ -32,7 +32,10 @@ const h01 = document.createElement("h1");
 h01.textContent = "Je vois des fantômes dans les ombres.";
 shadowpen.append(style1, h01);
 // Le selecteur :host représente l'hôte du shadow DOM, donc ici la div.open
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 const style2 = document.createElement("style");
 style2.textContent = /* CSS */
 `

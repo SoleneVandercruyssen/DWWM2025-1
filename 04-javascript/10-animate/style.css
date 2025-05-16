@@ -22,6 +22,7 @@ body{
 .b4{
     opacity: 0;
     transition: opacity 2s linear;
+<<<<<<< HEAD
 }
 
 .block{
@@ -56,4 +57,6 @@ body{
         width: 100%;
     }
     
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 }

@@ -56,4 +56,8 @@ const Person = {
         this.salutation();
     }
 };
+<<<<<<< HEAD
 export {Person};
+=======
+export {Person};
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb

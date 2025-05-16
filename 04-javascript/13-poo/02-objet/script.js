@@ -14,6 +14,7 @@ console.log(Person.getFullName);
 // console.log(Person.getFullName());
 Person.setAge = 54;
 Person.salutation();
+<<<<<<< HEAD
 Person.anniversaire();
 
 
@@ -35,3 +36,6 @@ objet.presentation();
 import {objetslider} from "./slider.js";
 
 
+=======
+Person.anniversaire();
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb

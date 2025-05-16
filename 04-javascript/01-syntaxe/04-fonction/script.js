@@ -93,7 +93,7 @@ function goodMorning(...noms)
 }
 goodMorning("Maurice", "Pierre", "Charles");
 
-// ? mettre fin à la fonction et retourner une valeur.
+// ? mettre fin à fonction et retourner une valeur.
 
 function insulte(nom)
 {

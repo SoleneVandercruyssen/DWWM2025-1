@@ -54,28 +54,3 @@ for(let i = 0; i < 5; i++)
     p.textContent = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A similique itaque, perspiciatis ea minima dolor iste, officiis, labore dignissimos deserunt quibusdam. Veniam, eaque facere cupiditate aperiam qui ducimus numquam incidunt.";
     m.append(p);
 }
-
-// ? Exercice
-
-// Création d'une div
-// le "h2" est la création d'une balise h2
-    const h2 = document.createElement("h2");
-    h2.innerHTML = "Santé";
-
-    const button1 = document.createElement("button");
-    button1.textContent = "tchin tchin !";
-
-    const button2 = document.createElement("button");
-    button2.textContent = "Le gras c'est la vie";
-
-
-    const p = document.createElement("p");
-    p.textContent = "Mangez 5 fruits et légumes par jour, les produits laitiers sont nos amis pour la vie, ne mangez ni trop gras, ni trop sucré, ni trop salé, l'abus d'alcool est dangereux pour la santé";
-
-    const div = document.createElement("div");
-// On a appeler les variables
-    div.append(h2, p, button1, button2)
-// On a demandé aux variables d'apparaître
-    document.body.append(div)
-
-

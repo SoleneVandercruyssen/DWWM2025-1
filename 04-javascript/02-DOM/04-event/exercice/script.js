@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 /*Exercice 1 :
+=======
+/*
+    Exercice 1 :
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 
     Faire que lors de la selection d'une couleur dans l'input de la div 2
     le texte du bouton change de couleur, 
     et lors de l'appuie sur le bouton, 
     le background de la div change de couleur.
 */
+<<<<<<< HEAD
 const input2 = document.querySelector('.div2 input')
 const btn2 = document.querySelector('.div2 button')
 const div2 = document.querySelector('.div2')
@@ -16,6 +22,8 @@ input2.addEventListener("change", ()=>{
 btn2.addEventListener("click", ()=>{
     div2.style.backgroundColor = input2.value
 })
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 
 // function Rrgb(){
 //     const r = Math.floor(Math.random()*256)
@@ -24,6 +32,7 @@ btn2.addEventListener("click", ()=>{
 //         return `rgb(${r},${g},${b})`
 //     }
 
+<<<<<<< HEAD
 // const inputCouleur = document.querySelector('.div2 input') 
 // const btnCouleur = document.querySelector('.div2 button') 
 // const div2 = document.querySelector('.div2') 
@@ -33,6 +42,17 @@ btn2.addEventListener("click", ()=>{
 // btnCouleur.addEventListener("click", function(){
 //     div2.style.backgroundColor = inputCouleur.value 
 // })
+=======
+const inputCouleur = document.querySelector('.div2 input') 
+const btnCouleur = document.querySelector('.div2 button') 
+const div2 = document.querySelector('.div2') 
+inputCouleur.addEventListener("input",function(){
+    btnCouleur.style.color = inputCouleur.value //`${Rrgb()}`
+})
+btnCouleur.addEventListener("click", function(){
+    div2.style.backgroundColor = inputCouleur.value 
+})
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 
 
 
@@ -58,6 +78,7 @@ modaleCloseBtn.addEventListener('click',function(){
 
 
 
+<<<<<<< HEAD
 
 
 const div3 = document.querySelector('.div3')
@@ -77,12 +98,15 @@ btnoff.addEventListener("click",()=>{
     modal[0].style.display = "none";
 })
 
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 /* 
     Exercice 3 :
 
     Faites que tous nos li dans la nav double de taille lorsque l'on clique dessus.
     puis retournent à leurs tailles d'origine si on clique de nouveau dessus.
 */
+<<<<<<< HEAD
 // const li = document.getElementsByTagName('li')
 
 // for (let i=0; i<li.length; i++){
@@ -111,6 +135,25 @@ btnoff.addEventListener("click",()=>{
     li[i].style.fontSize = i + 2 + "px";
     }
 })
+=======
+const li = document.getElementsByTagName('li')
+
+for (let i=0; i<li.length; i++){
+    function liSize (){
+        if (li[i].style.transform !== 'scale(2)'){
+            li[i].style.transform = 'scale(2)'
+        }
+        
+        else {
+            li[i].style.transform = 'scale(1)'
+        }
+    }
+    li[i].addEventListener('click', liSize)
+}
+
+
+
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 
 /* 
     Exercie 4 :

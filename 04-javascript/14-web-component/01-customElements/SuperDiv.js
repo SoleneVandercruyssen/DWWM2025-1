@@ -38,7 +38,11 @@ export class SuperDiv extends HTMLDivElement
         Ce sont des fonctions prédéfinie qui se lanceront automatiquement à certains moments un peu comme le constructor.
 
         On trouvera par exemple :
+<<<<<<< HEAD
             connectedCallback qui se déclenchera quand notre élément intégrera le DOM.
+=======
+            connectedCallback qui se déclenchera quand notre élément integrera le DOM.
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
     */
     connectedCallback()
     {
@@ -83,5 +87,9 @@ export class SuperDiv extends HTMLDivElement
     }
 }
 
+<<<<<<< HEAD
 customElements.define("super-div", SuperDiv, {extends: "div"});
 
+=======
+customElements.define("super-div", SuperDiv, {extends: "div"});
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb

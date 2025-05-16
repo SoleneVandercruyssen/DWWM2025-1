@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 "title": "Ma requête à un fichier JSON",
 "articles":
 [
@@ -11,4 +12,18 @@
         "content": "Je pourrai mettre plus du lorem"
     }
 ]
+=======
+    "title": "Ma requête à un fichier JSON",
+    "articles":
+    [
+        {
+            "heading": "Mon super article",
+            "content": "Je pourrais mettre du lorem"
+        },
+        {
+            "heading": "Mon super article 2",
+            "content": "Je pourrais mettre plus du lorem"
+        }
+    ]
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 }

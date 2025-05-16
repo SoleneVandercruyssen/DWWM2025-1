@@ -1,5 +1,6 @@
 "use strict";
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /* 
     Le principal ajout de TYPEscript est dans son nom
@@ -30,6 +31,8 @@ const today: Date = new Date();
 
 // Ou bien une fonction : 
 =======
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 /* 
     Le principal ajout de TYPEscript est dans son nom
     C'est le typage, c'est à dire que comme dans beaucoup de langage de programmation, on indiquera le type des variables, paramètres et autres
@@ -59,12 +62,16 @@ const person2: {prenom: string, [key:string]:string} = {prenom: "Charles", nom: 
 const today: Date = new Date();
 
 // Ou bien une fonction :
+<<<<<<< HEAD
 >>>>>>> 7c5fad3c4ed59ac826ae124a033e232aca8abe4c
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 const salut: Function = function(){};
 
 /* 
     On pourra typer les paramètres et les valeurs de retour d'une fonction.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     Le type "void" indique que la fonction ne retourne rien du tout
 */
@@ -75,18 +82,24 @@ function clickMe(e: PointerEvent): void
     console.log("Meric de cliquer sur", e.target);
     
 =======
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
     le type "void" indique que la fonction ne retourne rien du tout
 */
 function clickMe(e: PointerEvent): void
 {
     console.log("Merci de cliquer sur ", e.target);    
+<<<<<<< HEAD
 >>>>>>> 7c5fad3c4ed59ac826ae124a033e232aca8abe4c
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 }
 // Ici une erreur est indiqué car "click" donne un "MouseEvent" et non pas un "PointerEvent"
 // document.addEventListener("click", clickMe);
 document.addEventListener("pointerdown", clickMe);
 // Si on n'est pas sûr, on peut toujours indiquer le type "Event" qui est le parent de tout les évènements.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 function tri(tableau: readonly any[]): any[]{
     // le type readonly indique que le paramètre peut être lu, mais pas modifié
@@ -126,6 +139,8 @@ const btn5 = document.querySelector("#compte") as HTMLButtonElement;
 let y : string|number|boolean = 5;
 y = "turc",
 =======
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 function tri(tableau: readonly any[]): any[]
 {
     // Le type "readonly" indique que le paramètre peut être lu, mais pas modifié
@@ -164,5 +179,8 @@ const btn5 = document.querySelector('#compte') as HTMLButtonElement;
 
 let y: string|number|boolean = 5;
 y = "truc";
+<<<<<<< HEAD
 >>>>>>> 7c5fad3c4ed59ac826ae124a033e232aca8abe4c
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 y = false;

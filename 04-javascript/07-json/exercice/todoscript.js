@@ -11,6 +11,7 @@
     5. afficher la liste sauvegardé au chargement de la page.
     6. éditer la liste lorsque l'on coche ou supprime un élément.
     Bonus : Utiliser le drag and drop pour déplacer nos éléments dans la liste. il faudra penser à sauvegarder les éléments déplacé.
+<<<<<<< HEAD
  */
 const input = document.querySelector('#title');
 const bouton = document.querySelector('#addtask');
@@ -55,3 +56,6 @@ function showChoses(l){
     
 
 };
+=======
+ */
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb

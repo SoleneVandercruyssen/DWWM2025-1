@@ -21,7 +21,11 @@ function saveData(e)
     const user = {};
     // je boucle sur les différentes données du formulaire :
     data.forEach(function(value, name){
+<<<<<<< HEAD
         // j'obtient en premier paramètre, la valeur de chaque champs du formulaire, et en second, son nom.
+=======
+        // j'obtien en premier paramètre, la valeur de chaque champs du formulaire, et en second, son nom.
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
         // console.log(value, name);
         user[name] = value;
     });
@@ -49,7 +53,10 @@ function saveData(e)
  * show the user in the H1
  * @param {{prenom:string, age:string}} u 
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 function showUser(u)
 {
     const h1 = document.querySelector('h1');

@@ -8,6 +8,10 @@ $(document).ready(function () {
         }else{
             clearInterval(idInterval)
         }
+<<<<<<< HEAD
+=======
+        
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
     });
 
     let slideCount = $('#slider ul li').length;

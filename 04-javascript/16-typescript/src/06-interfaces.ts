@@ -1,15 +1,21 @@
 "use strict";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 type Chaussette = string;
 // type Chaussette = string|number;
 >>>>>>> 7c5fad3c4ed59ac826ae124a033e232aca8abe4c
+=======
+type Chaussette = string;
+// type Chaussette = string|number;
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 /* 
     L'interface est à moitié une classe abstraite et à moitié un type.
     Elle va servir de plan de construction à une classe.
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 type Chaussette = string;
@@ -23,10 +29,16 @@ interface Point
 {
     x: number;
 >>>>>>> 7c5fad3c4ed59ac826ae124a033e232aca8abe4c
+=======
+interface Point
+{
+    x: number;
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
     y: number;
     get(): number;
 }
 // On peut ajouter de nouveaux éléments à une interface.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 interface Point 
@@ -55,6 +67,8 @@ function show(p: Point) {}
 show(new Point3D());
 
 =======
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 interface Point
 {
     z: number;
@@ -78,4 +92,7 @@ class Point3D implements Point
 }
 function show(p: Point){}
 show(new Point3D());
+<<<<<<< HEAD
 >>>>>>> 7c5fad3c4ed59ac826ae124a033e232aca8abe4c
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb

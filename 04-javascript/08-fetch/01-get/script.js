@@ -117,7 +117,11 @@ function handleFetch(response)
     Cela est dû au fait que l'on change le HTML avec une copie de l'ancien HTML sous forme de texte.
 */
 const btn = document.querySelector('button');
+<<<<<<< HEAD
 // btn.addEventListener("click", ()=>console.log("CLIQUE !"));
+=======
+btn.addEventListener("click", ()=>console.log("CLIQUE !"));
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 
 // document.body.innerHTML += "test";
 // document.body.innerHTML = document.body.innerHTML + "test";

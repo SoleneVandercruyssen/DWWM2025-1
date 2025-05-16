@@ -13,7 +13,20 @@ main p{
     margin: 0 auto;
     padding: 100px 20px;
     line-height: 1.4;
+<<<<<<< HEAD
     /* visibility: hidden; */
+=======
+    /* Exercice : */
+    opacity: 0%;
+    translate: -32px 0;
+    transition: opacity 300ms ease, translate 300ms ease;
+
+    &.show {
+        opacity: 100%;
+        translate: 0;
+    }
+    /* fin exercice */
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 }
 main p:nth-child(even){
     background-color: rgb(106, 54, 54);
@@ -22,7 +35,11 @@ main p:nth-child(odd){
     background-color: rgb(55, 54, 106);
 }
 .scroll-indicator{
+<<<<<<< HEAD
     z-index: 5;
+=======
+  z-index: 5;
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
     position: fixed;
     top: 0;
     width: 100%;

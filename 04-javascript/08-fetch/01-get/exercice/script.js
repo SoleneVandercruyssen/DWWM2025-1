@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use strict";
 
 // ! EXO 1
@@ -209,6 +210,8 @@ function api(response) {
 }
 document.body.append(img, url2[0]);
 // console.log(url2, img);
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 const urlHero = "./hero.json"
 const heroSquad = document.querySelector("h1");
 const homeTown = document.getElementById("homeTown")
@@ -342,6 +345,7 @@ function chargerLangueParDefaut(languages)
 
 
 
+<<<<<<< HEAD
 // fetch(url2)
 //   .then(response => {
 //     if (!response.ok) {
@@ -355,6 +359,8 @@ function chargerLangueParDefaut(languages)
 //   .catch(error => {
 //     console.error('Il y a eu un problème avec la requête fetch :', error);
 //   });
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 
 
 
@@ -378,4 +384,8 @@ fetch('https://api.thecatapi.com/v1/images/search')
         });
         document.body.appendChild(container);
     }
+<<<<<<< HEAD
     
+=======
+    
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb

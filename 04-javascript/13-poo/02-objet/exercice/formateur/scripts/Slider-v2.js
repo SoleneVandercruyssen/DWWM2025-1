@@ -92,7 +92,11 @@ const Slider = {
 	 * @param {boolean} style boolean indiquant si le style par défaut doit être utilisé
 	 */
 	init(style){
+<<<<<<< HEAD
 		// Affiche la première image et ajoute les écouteurs d'évènement.
+=======
+		// Affiche la première image et ajoute les écouteurs d'évènment.
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 		this.showItems(0);
 		this.dots.forEach(dot=>dot.addEventListener("pointerdown", this.currentItem.bind(this)));
 		this.btns.forEach(btn=>btn.addEventListener("pointerdown", this.changeItem.bind(this)));

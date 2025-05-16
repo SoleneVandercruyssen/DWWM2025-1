@@ -56,5 +56,9 @@ function load()
     progress.style.width = w+"%";
     setTimeout(load, 100);
 }
+<<<<<<< HEAD
 load();
 
+=======
+load();
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb

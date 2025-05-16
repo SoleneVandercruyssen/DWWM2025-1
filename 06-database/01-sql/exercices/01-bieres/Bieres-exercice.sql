@@ -1,4 +1,5 @@
 -- Récupérer la BDD dans les ressources.
+<<<<<<< HEAD
 
 --  1. Quels sont les tickets qui comportent l’article d’ID 500, afficher le numéro de  ticket uniquement ? (24 résultats attendus)
 -- TODO SELECT numero_ticket FROM ventes WHERE id_article = 500;
@@ -30,6 +31,27 @@
 
 --  10. Lister pour chaque ticket la quantité totale d’articles vendus classée par quantité décroissante. (4502 résultats attendus)
 -- TODO SELECT numero_ticket, SUM(quantite) AS total_articles FROM ventes GROUP BY numero_ticket ORDER BY total_articles DESC;
+=======
+--  1. Quels sont les tickets qui comportent l’article d’ID 500, afficher le numéro de  ticket uniquement ? (24 résultats attendus)
+
+--  2. Afficher les tickets du 15/01/2014. (1 résultat attendu)
+
+--  3. Afficher les tickets émis du 15/01/2014 au 17/01/2014.(4 résultats attendus)
+
+--  4. Afficher la liste des articles apparaissant à 50 et plus exemplaires sur un ticket.(1274 résultats attendus)
+
+--  5. Quelles sont les tickets émis au mois de mars 2014.(78 résultats attendus)
+
+--  6. Quelles sont les tickets émis entre les mois de mars et avril 2014 ? (166 résultats attendus)
+
+--  7. Quelles sont les tickets émis au mois de mars et juin 2014 ? (174 résultats attendus)
+
+--  8. Afficher l’id et le nom des bières classée par couleur. (3922 résultats attendus, vous pouvez afficher la couleur pour vérifier votre résultat)
+
+--  9. Afficher l’id et le nom des bières n’ayant pas de couleur. (706 résultats attendus)
+
+--  10. Lister pour chaque ticket la quantité totale d’articles vendus classée par quantité décroissante. (4502 résultats attendus)
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 
 --  11. Lister chaque ticket pour lequel la quantité totale d’articles vendus est supérieure
 --  à 500 classée par quantité décroissante.(1026 résultats attendus)

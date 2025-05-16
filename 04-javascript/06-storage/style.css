@@ -82,6 +82,7 @@ body.dark{
 }
 body.dark h1{
     color: rgb(195, 99, 115);
+<<<<<<< HEAD
 } 
 
 ul{
@@ -102,6 +103,8 @@ li{
 a{
     text-decoration: none;
     font-size: 20px;
+=======
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 }
 .rose
 {

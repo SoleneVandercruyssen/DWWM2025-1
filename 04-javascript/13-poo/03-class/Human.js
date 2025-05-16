@@ -88,4 +88,8 @@ export default class Human
         this.#age++;
         this.salutation();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb

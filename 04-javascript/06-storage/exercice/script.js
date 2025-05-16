@@ -1,4 +1,5 @@
 "use strict";
+<<<<<<< HEAD
 /* 
     1. Ajouter un menu de selection qui permettra de choisir entre 3 thèmes.
     2. Appliquer le thème selectionné grâce à JS (pas besoin de thème compliqué)
@@ -80,6 +81,11 @@ Theme();
 const optiontheme = document.querySelector('#themes');
 
 
+=======
+/* ------EX 1------- */
+
+const optiontheme = document.querySelector('#themes');
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 // this is how you declare a value attribute ('[value="rose"]')
 const rose = document.querySelector('[value="rose"]') 
 const bleu = document.querySelector('[value="bleu"]')

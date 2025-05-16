@@ -43,7 +43,11 @@ request.finally(()=>console.log("promesse terminée"));
 
 const r1 = fetch("test.json");
 const r2 = fetch("index.html");
+<<<<<<< HEAD
 // Il est possible de résoudre plusieurs promesse en même temps.
+=======
+// Il est posssible de résoudre plusieurs promesse en même temps.
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
 Promise.all([r1, r2]).then(function(resultat){
     // Promise.all() prend un argument un tableau de promesse et en résultat fourni un tableau contenant les différents résultat des promesses
     console.log(resultat);
@@ -59,7 +63,11 @@ Promise.all([r1, r2]).then(function(resultat){
 /* 
     Il existe aussi "Promise.race()" et "Promise.any()" qui prennent aussi en paramètre un tableau de promesse.
     Mais qui ne rendront que la plus rapide à s'executer.
+<<<<<<< HEAD
         .race() va déclencher le catch si la promesse la plus rapide a échouée.
+=======
+        .race() va déclencher le catch si la promesse la plus rapide a échouté.
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
         .any() va déclencher le catch, si toute les promesses ont échouées.
 
         On peut créer nos propres promesses.
@@ -160,4 +168,8 @@ function salade2()
     return new Promise((resolve)=>{
         resolve("burger 2 : la salade est placé");
     });
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dd0706a124b2689e027146e5eef3429e6621bcbb
