@@ -26,7 +26,7 @@ docker compose up -d
 
 Les cours PHP peuvent être accompagner de bibliothèques installées avec Composer.
 
-Dans ce cas il faudra lancer dans le terminal dans le même répertoir que le fichier `composer.json` la commande suivante :
+Dans ce cas il faudra lancer dans le terminal dans le même répertoire que le fichier `composer.json` la commande suivante :
 
 ```shell
 composer require
